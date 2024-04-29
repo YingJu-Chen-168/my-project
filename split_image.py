@@ -3,6 +3,7 @@ import numpy as np
 number_of_image = 88
 
 num = np.random.permutation(number_of_image)
+num = num + 1
 test_num = num[0 : int(number_of_image/10)]
 train_num = num[int(number_of_image/10)+1 : number_of_image-2]
 val_num = num[number_of_image-1]
