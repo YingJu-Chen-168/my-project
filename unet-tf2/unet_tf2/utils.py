@@ -33,8 +33,8 @@ def build_data(x_path, y_path, files_path=None, porcentage=1.0, Xextension='.jpe
         Xdata.append(ix)
         ydata.append(iy)
 
-    Xdata = np.float32(np.array(Xdata) / 255)
-    ydata = np.float32((np.array(ydata) > 10)*1)
+    Xdata = np.float32(np.array(Xdata) / 255, dtype="object")
+    ydata = np.float32((np.array(ydata) > 10)*1, dtype="object")
 
     return Xdata, ydata[..., 0, None]
 
