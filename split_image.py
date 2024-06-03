@@ -4,10 +4,13 @@ number_of_image = 101
 
 num = np.random.permutation(number_of_image)
 num = num + 1
+print(num)
 test_num = num[0 : int(number_of_image/10)]
-train_num = num[int(number_of_image/10)+1 : number_of_image-2]
+print(test_num)
+train_num = num[int(number_of_image/10) : number_of_image-1]
+print(train_num)
 val_num = num[number_of_image-1]
-
+print(val_num)
 train_path = 'data/ImageSets/Main/train.txt'
 test_path = 'data/ImageSets/Main/test.txt'
 val_path = 'data/ImageSets/Main/val.txt'
