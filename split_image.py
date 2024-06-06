@@ -1,6 +1,6 @@
 import numpy as np
 
-number_of_image = 101
+number_of_image = 110
 
 num = np.random.permutation(number_of_image)
 num = num + 1
